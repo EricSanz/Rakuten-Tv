@@ -25,24 +25,24 @@ body {
 
 .nav__items {
     display: flex;
-    position: relative;
+    /* position: relative; */
     margin: 0 auto;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 110px;
     width: 100%;
 }
 
 .logo {
-    height: 40px;
+    height: 35px;
     width: 187px;
-    position: relative;
+    /* position: relative; */
     object-fit: contain;
     order: 1;
 }
 
 .nav__items-menu {
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     order: 2;
@@ -57,6 +57,7 @@ body {
 .nav__items-searchbar {
     display: flex;
     align-items: center;
+    margin-left: -10px;
 }
 
 .nav__items-searchicon {
@@ -67,12 +68,12 @@ body {
 
 .nav__items-input {
     padding-left: 40px;
-    height: 40px;
+    height: 36px;
     background-color: #333;
     border-radius: 2px;
     border: 0;
     outline: none;
-    width: 50%;
+    width: 25%;
     min-width: 300px;
     font-size: 16px;
     color: #252525;
@@ -93,11 +94,11 @@ body {
     justify-content: flex-end;
     flex-grow: 0;
     order: 4;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .nav__items-help {
-    width: 175px;
+    width: 160px;
     color: #999;
     text-decoration: none;
 }
@@ -130,16 +131,20 @@ body {
 }
 
 .navmenu__subscriptions {
-    padding-left: 15px;
-    width: 145px;
+    width: 130px;
 }
 
-.navmenu__subscriptions-anchor:hover {
+.navmenu__cinema {
+    width: 105px;
+    padding-left: 15px;
+}
+
+.navmenu__subscriptions-anchor:hover, .navmenu__cinema-anchor:hover {
     text-decoration: none;
     color: #ffe300;
 }
 
-.navmenu__subscriptions-text {
+.navmenu__subscriptions-text, .navmenu__cinema-text {
     position: relative;
     align-items: center;
     color: #fff;
@@ -147,7 +152,7 @@ body {
     font-weight: 600;
 }
 
-.navmenu__subscriptions::after {
+.navmenu__subscriptions::after, .navmenu__cinema::after {
     content: '▼';
     position: relative;
     font-size: 10px;
@@ -155,24 +160,24 @@ body {
     bottom: 1px;
 }
 
-.navmenu__subscriptions-text:hover {
+.navmenu__subscriptions-text:hover, .navmenu__cinema-text:hover {
     text-decoration: none;
     color: #ffe300;
 }
 
-.navmenu__subscriptions:hover::after {
+.navmenu__subscriptions:hover::after, .navmenu__cinema:hover::after {
     content: '▲';
     color: #ffe300;
 }
 
-.navmenu__subscriptions-icon {
+.navmenu__subscriptions-icon, .navmenu__cinema-icon {
     display: none;
     font-size: 26px;
     text-align: center;
     color: #fff;
 }
 
-.navmenu__subscriptions-icon:hover {
+.navmenu__subscriptions-icon:hover .navmenu__cinema-icon:hover{
     color: #ffe300;
 }
 
@@ -180,26 +185,26 @@ ul {
     list-style: none;
 }
 
-.navmenu__subscriptions-child {
+.navmenu__subscriptions-child, .navmenu__cinema-child {
     display: none;
     position: absolute;
-    margin-left: -15px;
+    margin-left: -10px;
     padding: 0 15px;
     background-color: #000;
     border-radius: 0 0 2px 2px;
     box-shadow: 0 3px 10px -4px rgb(0,0,0/80%);
 }
 
-.navmenu__subscriptions-child-item {
+.navmenu__subscriptions-child-item, .navmenu__cinema-child-item {
     white-space: nowrap;
 }
 
-.navmenu__subscriptions-child-item:first-child, .navmenu__subscriptions-child-item-anchor {
+.navmenu__subscriptions-child-item:first-child, .navmenu__subscriptions-child-item-anchor, .navmenu__cinema-child-item:first-child, .navmenu__cinema-child-item-anchor {
     padding-top: 15px;
 }
 
-.navmenu__subscriptions-child-item-anchor {
-    font-size: 14px;
+.navmenu__subscriptions-child-item-anchor, .navmenu__cinema-child-item-anchor {
+    font-size: 13px;
     display: block;
     padding: 10px 0;
     color: #fff;
@@ -207,7 +212,7 @@ ul {
     transition: color .1s ease;
 }
 
-.navmenu__subscriptions-child-item-anchor:hover {
+.navmenu__subscriptions-child-item-anchor:hover, .navmenu__cinema-child-item-anchor:hover {
     color: #ffe300;
     text-decoration: none;
 }

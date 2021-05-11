@@ -23,22 +23,31 @@
         <div class="nav__items">
             <img src="./media/main page/rakuten-logo.png" alt="rakuten logo" class="logo">
             <div class="nav__items-menu">
-                <div class="dropdown show nav__items-cinema">
-                    <a class="btn btn-secundary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        CINEMA
+                <li id="navmenu__cinema-id" class="navmenu__cinema">
+                    <a href="#" class="navmenu__cinema-anchor">
+                        <span class="navmenu__cinema-icon material-icons">theaters</span>
+                        <a href="#" class="navmenu__cinema-text" id="cinema__text">CINEMA</a>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">FAMILY</a>
-                        <a class="dropdown-item" href="#">COLECCIONES</a>
-                        <a class="dropdown-item" href="#">TOP POPULARES</a>
-                        <a class="dropdown-item" href="#">TODOS LOS GÉNEROS</a>
-                    </div>
-                </div>
+                    <ul class="navmenu__cinema-child" id="cinema__options-id">
+                        <li class="navmenu__cinema-child-item">
+                            <a href="#" class="navmenu__cinema-child-item-anchor" target="_self">FAMILY</a>
+                        </li>
+                        <li class="navmenu__cinema-child-item">
+                            <a href="#" class="navmenu__cinema-child-item-anchor" target="_self">COLECCIONES</a>
+                        </li>
+                        <li class="navmenu__cinema-child-item">
+                            <a href="#" class="navmenu__cinema-child-item-anchor" target="_self">TOP POPULARES</a>
+                        </li>
+                        <li class="navmenu__cinema-child-item">
+                            <a href="#" class="navmenu__cinema-child-item-anchor" target="_self">TODOS LOS GÉNEROS</a>
+                        </li>
+                    </ul>
+                </li>
                 <span class="nav__items-free">GRATIS</span>
                 <li id="navmenu__subscriptions-id" class="navmenu__subscriptions">
                     <a href="#" class="navmenu__subscriptions-anchor">
                         <span class="navmenu__subscriptions-icon material-icons">local_activity</span>
-                        <a  href="#" class="navmenu__subscriptions-text" id="subscriptions__text">SUSCRIPCIONES</a>
+                        <a href="#" class="navmenu__subscriptions-text" id="subscriptions__text">SUSCRIPCIONES</a>
                     </a>
                     <ul class="navmenu__subscriptions-child" id="subscriptions__options-id">
                         <li class="navmenu__subscriptions-child-item">
