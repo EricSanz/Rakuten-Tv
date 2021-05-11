@@ -35,7 +35,7 @@
                     </div>
                 </div>
                 <span class="nav__items-free">GRATIS</span>
-                <div class="dropdown show order nav__items-subscriptions">
+                <!-- <div class="dropdown show order nav__items-subscriptions">
                     <a class="btn btn-secundary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         SUSCRIPCIONES
                     </a>
@@ -43,11 +43,27 @@
                         <a class="dropdown-item" href="#">STARZPLAY</a>
                         <a class="dropdown-item" href="#">RTV SUSCRIPCION</a>
                     </div>
-                </div>
+                </div> -->
+                <li id="navmenu__subscriptions-id" class="navmenu__subscriptions">
+                    <a href="#" class="navmenu__subscriptions-anchor">
+                        <span class="navmenu__subscriptions-icon material-icons">local_activity</span>
+                        <a  href="#" class="navmenu__subscriptions-text">SUSCRIPCIONES</a>
+                    </a>
+                    <ul class="navmenu__subscriptions-child">
+                        <li class="navmenu__subscriptions-child-item">
+                            <a class="navmenu__subscriptions-child-item-anchor" href="#" target="_self">STARZPLAY</a>
+                        </li>
+                        <li class="navmenu__subscriptions-child-item">
+                            <a class="navmenu__subscriptions-child-item-anchor" href="#" target="_self">RTV SUSCRIPCIÓN</a>
+                        </li>
+                    </ul>
+                </li>
             </div>
-            <div class="nav__items-searchbar">
-                <span class="material-icons material-icons-hero-image nav__items-searchbutton">search</span>
-                <input type="text" name="nav__items-input" id="nav__items-inputId" class="nav__items-input" placeholder="Buscar">
+            <div class="nav__items-search-container">
+                <div class="nav__items-searchbar">
+                    <span class="material-icons material-icons-hero-image nav__items-searchicon">search</span>
+                    <input type="text" name="nav__items-input" id="nav__items-inputId" class="nav__items-input" placeholder="Buscar">
+                </div>
             </div>
             <div class="nav__items-user">
                 <span class="nav__items-help">AYUDA Y DISPOSITIVOS</span>
