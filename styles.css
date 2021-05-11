@@ -191,10 +191,6 @@ ul {
     list-style: none;
 }
 
-#subscriptions__child-id {
-    display: none;
-}
-
 .navmenu__subscriptions-child {
     display: none;
     position: absolute;
