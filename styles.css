@@ -18,7 +18,7 @@ body {
     top: 0;
     right: 0;
     left: 0;
-    height: 55px;
+    height: 56px;
     background: #000;
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
@@ -205,6 +205,54 @@ ul {
 
 /* MOBILE NAV */
 
+.mblnav {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 56px;
+    background: #000;
+    border-top: 1.2px solid rgba(255,255,255,0.2);
+}
+
 .mblnav__items {
-    display: none;
+    display: flex;
+    position: relative;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 0 25px;
+    /* max-width: 420px; */
+    width: 100%;
+}
+
+.mblnav__items-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #999;
+    transition: color .1s ease;
+}
+
+.mblnav__items-container:hover {
+    color: #ffe300;
+    cursor: pointer;
+}
+
+.mblnav__icon-text {
+    font-size: 10px;
+    font-family: 'Noto sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+    .mblnav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 560px) {
+    .mblnav__items {
+        padding: 0 40px;
+    }
 }
