@@ -4,8 +4,24 @@ const subscriptionsTitle = document.getElementById('subscriptions__text');
 const cinemaMenu = document.getElementById('navmenu__cinema-id');
 const cinemaMenuOptions = document.getElementById('cinema__options-id');
 const cinemaTitle = document.getElementById('cinema__text');
+const searchButton = document.getElementById('search__button-id');
+const searchContainer = document.getElementById('search__box-id');
+const searchContainerClose = document.getElementById('search__box-close-id');
+const navItems = document.getElementById('nav__items-id');
 
-// Navbar Desktop Dropdowns Functionalities//
+// Search Button Functionalities //
+
+searchButton.addEventListener('click', () => {
+    searchContainer.style.transform = 'translateY(55px)';
+    navItems.style.display = 'none';
+}, false);
+
+searchContainerClose.addEventListener('click', () => {
+    searchContainer.style.transform = 'translateY(-55px)';
+    navItems.style.display = 'flex';
+}, false);
+
+// Navbar Desktop Dropdowns Functionalities //
 
 subscriptionsMenu.addEventListener('mouseover', () => {
     subscriptionsMenuOptions.style.display = 'block';

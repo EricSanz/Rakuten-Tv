@@ -251,6 +251,8 @@ ul {
 /* SEARCH BOX */
 
 .search__box {
+    position: fixed;
+    top: -55px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -260,7 +262,7 @@ ul {
     box-shadow: 0 -5px 10px 5px rgb(0, 0, 0 / 50%);
     height: 50px;
     color: #999;
-    margin-top: -55px;
+    transition: .3s;
 }
 
 .search__box-search {
