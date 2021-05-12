@@ -20,6 +20,7 @@ body {
     left: 0;
     height: 56px;
     background: #000;
+    background: linear-gradient(to bottom,rgba(0,0,0,.8) 0,rgba(0,0,0,.7) 20%,rgba(0,0,0,.4) 50%,transparent 100%);
     border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
@@ -289,7 +290,6 @@ ul {
 
 @media screen and (max-width: 1024px) {
     .nav {
-        background: none;
         border-bottom: none;
     }
 
