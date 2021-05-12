@@ -25,11 +25,12 @@ body {
 
 .nav__items {
     display: flex;
-    /* position: relative; */
+    position: relative;
     margin: 0 auto;
     flex-wrap: nowrap;
     align-items: center;
-    padding: 0 110px;
+    padding: 0 20px;
+    max-width: 1680px;
     width: 100%;
 }
 
@@ -73,8 +74,8 @@ body {
     border-radius: 2px;
     border: 0;
     outline: none;
-    width: 25%;
-    min-width: 300px;
+    width: 35%;
+    min-width: 150px;
     font-size: 16px;
     color: #252525;
 }
@@ -95,6 +96,7 @@ body {
     flex-grow: 0;
     order: 4;
     font-size: 13px;
+    padding-right: 20px;
 }
 
 .nav__items-help {
@@ -139,11 +141,6 @@ body {
     padding-left: 15px;
 }
 
-.navmenu__subscriptions-anchor:hover, .navmenu__cinema-anchor:hover {
-    text-decoration: none;
-    color: #ffe300;
-}
-
 .navmenu__subscriptions-text, .navmenu__cinema-text {
     position: relative;
     align-items: center;
@@ -167,17 +164,6 @@ body {
 
 .navmenu__subscriptions:hover::after, .navmenu__cinema:hover::after {
     content: '▲';
-    color: #ffe300;
-}
-
-.navmenu__subscriptions-icon, .navmenu__cinema-icon {
-    display: none;
-    font-size: 26px;
-    text-align: center;
-    color: #fff;
-}
-
-.navmenu__subscriptions-icon:hover .navmenu__cinema-icon:hover{
     color: #ffe300;
 }
 
@@ -215,4 +201,10 @@ ul {
 .navmenu__subscriptions-child-item-anchor:hover, .navmenu__cinema-child-item-anchor:hover {
     color: #ffe300;
     text-decoration: none;
+}
+
+/* MOBILE NAV */
+
+.mblnav__items {
+    display: none;
 }
