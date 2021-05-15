@@ -240,13 +240,14 @@ a {
 .mblnav__items {
     display: flex;
     position: relative;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     justify-content: space-around;
     /* padding: 0 10px; */
-    width: 100%;
+    /* width: 100%; */
 }
 
 .mblnav__items-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -254,6 +255,7 @@ a {
     /* padding-left: 5px;
     padding-right: 5px; */
     color: #999;
+    width: 100%;
     transition: color .1s ease;
 }
 
@@ -263,7 +265,7 @@ a {
 }
 
 .mblnav__icon-text {
-    font-size: 10px;
+    font-size: 9px;
     font-family: 'Noto sans', Arial, sans-serif;
     font-weight: 600;
 }
@@ -305,7 +307,53 @@ a {
     order: 3;
 }
 
-/* RESPONSIVE MOBILE AND DESKTOP NAV */
+/* MAIN CAROUSEL */
+
+.carousel-indicators {
+    margin-bottom: 1%;
+}
+
+.carousel-indicators li {
+    padding-top: 10px;
+    bottom: -20px;
+}
+
+.carousel-indicators [data-bs-target]{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    opacity: 0;
+    width: 10%;
+    bottom: -16%;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    opacity: 1;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 2.2rem;
+    height: 2.2rem;
+    background-size: 250% 250%;
+}
+
+main {
+    background-color: #171717;
+    box-shadow: 0 0 15px 0 rgb(0 0 0 / 60%);
+}
+
+.new {
+    position: relative;
+    margin: 20px;
+    background-color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* RESPONSIVE */
 
 @media screen and (max-width: 1024px) {
 
@@ -346,13 +394,7 @@ a {
         display: flex;
         margin: 0 100px;
     }
-
-    /* main {
-        margin: 57px 34px;
-    } */
 }
-
-
 
 @media screen and (max-width: 1250px) {
     .nav__items-help {
@@ -371,20 +413,26 @@ a {
 }
 
 @media screen and (min-width: 560px) and (max-width: 1024px) {
-    /* .mblnav__items {
-        padding: 0 40px;
-    } */
     .w-100 {
         height: calc(120vw * 0.33);
     }
-    /* main {
-        width: 100%;
-    } */
 }
 
 @media screen and (min-width: 1025px) {
     .w-100 {
         height: calc(100vw * 0.355);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .carousel-control-next-icon, .carousel-control-prev-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+        background-size: 250% 250%;
+    }
+
+    .carousel-control-next, .carousel-control-prev {
+        width: 15%;
     }
 }
 
@@ -397,98 +445,3 @@ a {
         height: calc(150vw * 0.29);
     }
 }
-
-/* MAIN CAROUSEL */
-
-/* main {
-    margin: 57px 34px;
-} */
-
-.carousel-indicators {
-    margin-bottom: 1%;
-}
-
-.carousel-indicators li {
-    padding-top: 10px;
-    bottom: -20px;
-}
-
-/* .carousel-control-next, .carousel-control-prev {
-    display: none;
-}
-
-.carousel-control-next:hover, .carousel-control-prev:hover {
-    display: flex;
-} */
-
-.carousel-indicators [data-bs-target]{
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-}
-
-main {
-    background-color: #171717;
-    box-shadow: 0 0 15px 0 rgb(0 0 0 / 60%);
-}
-
-.new {
-    position: relative;
-    margin: 20px;
-    background-color: #fff;
-    width: 100px;
-    height: 100px;
-}
-
-/* .carousel-indicators, .active {
-    width: 10px;
-    height: 10px;
-    margin-right: 5px;
-    margin-top: 1px;
-} */
-
-/* .content {
-    position: absolute;
-    top: 0;
-} */
-
-/* img {
-    width: 100%;
-} */
-
-/* .slider {
-    padding: 0;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    width: 120%;
-    background-image: url(https://prod0-kraken-cloudfront.rakuten.tv/images/placeholders/dots-94daba107d.png);
-    background-repeat: no-repeat;
-    background-position: center center;
-} */
-
-
-/* .slider .carousel-item img {
-    height: 200px;
-    object-fit: cover;
-    object-position: 50% 50%;
-    margin-bottom: 10px;
-}
-  
-.slider .carousel-indicators li {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-} */
-
-/* .slider::before {
-    content: '';
-    display: block;
-} */
-
-/* .slider-wrapper {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-} */
