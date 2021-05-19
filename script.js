@@ -8,6 +8,8 @@ const searchButton = document.getElementById('search__button-id');
 const searchContainer = document.getElementById('search__box-id');
 const searchContainerClose = document.getElementById('search__box-close-id');
 const navItems = document.getElementById('nav__items-id');
+let scrollTranslation = 0;
+
 
 // Search Button Functionalities //
 
@@ -60,3 +62,31 @@ cinemaMenuOptions.addEventListener('mouseout', () => {
     cinemaMenuOptions.style.display = 'none';
     cinemaTitle.style.color = '#fff';
 }, false);
+
+// HORIZONTAL SCROLL //
+
+const scrollRight = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslation -= 13;
+        if (scrollTranslation === -52) {
+            document.getElementById('right__arrow').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslation -= 20;
+        if (scrollTranslation === -60) {
+            document.getElementById('right__arrow').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslation -= 22;
+        if (scrollTranslation === -66) {
+            document.getElementById('right__arrow').style.visibility = "hidden";
+        }
+    } else {
+        scrollTranslation -= 18;
+        if (scrollTranslation === -72) {
+            document.getElementById('right__arrow').style.visibility = "hidden";
+        }
+    }
+    document.getElementById('left__arrow').style.visibility = "visible";
+    document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
+}

@@ -416,6 +416,7 @@ main {
     display: flex;
     transition: transform 1s;
     text-align: center;
+    /* overflow-y: auto; */
 }
 
 .scrollable__list > img,
@@ -437,8 +438,8 @@ main {
 }
 
 #horizontal__photo {
-    width: 295px;
-    height: 200px;
+    width: 320px;
+    height: 210px;
 }
 
 /* RESPONSIVE */
@@ -571,6 +572,11 @@ main {
 
     .w-100 {
         height: calc(150vw * 0.27);
+    }
+
+    #horizontal__photo {
+        width: 240px;
+        height: 170px;
     }
 }
 
