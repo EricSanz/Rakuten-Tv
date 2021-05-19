@@ -65,7 +65,7 @@ cinemaMenuOptions.addEventListener('mouseout', () => {
 
 // HORIZONTAL SCROLL //
 
-const scrollRight = () => {
+const scrollingRight = () => {
     if (window.innerWidth < 1024 && window.innerWidth >= 800) {
         scrollTranslation -= 13;
         if (scrollTranslation === -52) {
@@ -88,5 +88,27 @@ const scrollRight = () => {
         }
     }
     document.getElementById('left__arrow').style.visibility = "visible";
+    document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
+}
+
+const scrollingLeft = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslation += 13;
+        scrollTranslation = +scrollTranslation;
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslation += 20;
+        scrollTranslation = +scrollTranslation;
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslation += 22;
+        scrollTranslation = +scrollTranslation;
+    } else {
+        scrollTranslation += 18;
+        scrollTranslation = +scrollTranslation;
+    }
+
+    if(!scrollTranslation) {
+        document.getElementById('left__arrow').style.visibility = "hidden";
+    }
+    document.getElementById('right__arrow').style.visibility = "visible";
     document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
 }
