@@ -355,11 +355,11 @@ main {
     padding: 20px 0 8px 15px;
 }
 
-.gratis__section {
-    padding: 8px 0 10px 15px;
+.gratis__section, .cinema__section {
+    padding: 8px 0 20px 15px;
 }
 
-.gratis {
+.gratis, .cinema {
     overflow: hidden;
     display: flex;
     position: relative;
@@ -434,7 +434,7 @@ main {
     cursor: pointer;
     border-radius: 2px;
     margin-right: 10px;
-    max-height: 250px;
+    max-height: 300px;
 }
 
 /* .scrollable__list::after {
@@ -459,16 +459,17 @@ main {
 }
 
 .scrollable__list-photo {
-    width: 180px;
+    width: 220px;
+    height: 300px;
 }
 
-.gratis__title {
+.gratis__title, .cinema__title {
     font-family: 'Noto Sans', Arial, sans-serif;
     font-size: 22px;
     font-weight: 600;
 }
 
-.gratis__title-container {
+.gratis__title-container, .cinema__title-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -476,14 +477,14 @@ main {
     margin-bottom: 5px;
 }
 
-.gratis__title-see-all {
-    margin-top: 4px;
+.gratis__title-see-all, .cinema__title-see-all {
+    margin-top: 1px;
     font-family: 'Noto Sans', Arial, sans-serif;
     font-size: 14px;
     font-weight: 600;
 }
 
-.gratis__title-see-all-container {
+.gratis__title-see-all-container, .cinema__title-see-all-container {
     display: flex;
 }
 
@@ -546,19 +547,19 @@ main {
 
 @media (max-width: 730px) {
 
-    .gratis__title-container {
+    .gratis__title-container, .cinema__title-container {
         margin-top: 8px;
     }
 
-    .gratis__title {
+    .gratis__title, .cinema__title {
         font-size: 16px;
     } 
 
-    .gratis__title-see-all {
+    .gratis__title-see-all, .cinema__title-see-all {
         font-size: 10px;
     }
 
-    .gratis__title-see-all-container {
+    .gratis__title-see-all-container, .cinema__title-see-all-container {
         display: none;
     }
 }
