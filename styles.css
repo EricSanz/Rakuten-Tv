@@ -417,7 +417,7 @@ main {
     right: 5px;
 }
 
-.horizontal__list-arrow {
+.horizontal__list-arrow, .horizontal__list-arrow-gratis {
     display: block;
     top: 10px;
 }

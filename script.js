@@ -9,6 +9,7 @@ const searchContainer = document.getElementById('search__box-id');
 const searchContainerClose = document.getElementById('search__box-close-id');
 const navItems = document.getElementById('nav__items-id');
 let scrollTranslation = 0;
+let scrollTranslationGratis = 0;
 
 
 // Search Button Functionalities //
@@ -127,4 +128,40 @@ const scrollingLeftBanners = () => {
     }
     document.getElementById('right__arrow-banners').style.visibility = "visible";
     document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
+}
+
+const scrollingRightGratis = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationGratis -= 19;
+        if (scrollTranslationGratis === -76) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationGratis -= 2;
+        if (scrollTranslationGratis === -80) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslationGratis -= 22;
+        if (scrollTranslationGratis === -44) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 440) {
+        scrollTranslationGratis -= 9;
+        if (scrollTranslationGratis === -90) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1260) {
+        scrollTranslationGratis -= 31;
+        if (scrollTranslationGratis === -62) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else {
+        scrollTranslationGratis -= 24;
+        if (scrollTranslationGratis === -72) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    }
+    document.getElementById('left__arrow-gratis').style.visibility = "visible";
+    document.getElementById('scroll__list-gratis').style.transform = `translateX(${scrollTranslationGratis}%)`;
 }
