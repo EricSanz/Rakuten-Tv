@@ -148,29 +148,19 @@
         </section>
         <section class="banners__section">
             <div class="banners">
-                <a href="#">
-                    <img src="/Rakuten-Tv/media/main page/destacado-mes.jpeg" alt="Destacado del mes">
-                </a>
-            </div>
-            <div class="banners">
-                <a href="#">
-                    <img src="/Rakuten-Tv/media/main page/cinema-generic.jpeg" alt="Últimos estrenos">
-                </a>
-            </div>
-            <div class="banners">
-                <a href="#">
-                    <img src="/Rakuten-Tv/media/main page/free-generic.jpeg" alt="Contenido gratuito">
-                </a>
-            </div>
-            <div class="banners">
-                <a href="#">
-                    <img src="/Rakuten-Tv/media/main page/starzplay-generic.png" alt="Starzplay">
-                </a>
-            </div>
-            <div class="banners">
-                <a href="#">
-                    <img src="/Rakuten-Tv/media/main page/peliculas-promo.png" alt="Peliculas promo">
-                </a>
+                <div class="arrow__container left__arrow-container" onclick="scrollLeft()">
+                    <span class="material-icons arrow__left horizontal__list-arrow">navigate_before</span>
+                </div>
+                <div class="arrow__container right__arrow-container" onclick="scrollRight()">
+                    <span class="material-icons arrow__right horizontal__list-arrow">navigate_next</span>
+                </div>
+                <div class="scrollable__list">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/destacado-mes.jpeg" alt="Destacado del mes">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/cinema-generic.jpeg" alt="Últimos estrenos">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/free-generic.jpeg" alt="Contenido gratuito">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/starzplay-generic.png" alt="StarzPlay">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/peliculas-promo.png" alt="Peliculas promo">
+                </div>
             </div>
         </section>
     </main>
