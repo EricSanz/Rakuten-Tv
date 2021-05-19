@@ -130,6 +130,8 @@ const scrollingLeftBanners = () => {
     document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
 }
 
+// GRATIS SECTION //
+
 const scrollingRightGratis = () => {
     if (window.innerWidth < 1024 && window.innerWidth >= 800) {
         scrollTranslationGratis -= 19;
@@ -137,7 +139,7 @@ const scrollingRightGratis = () => {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
-        scrollTranslationGratis -= 2;
+        scrollTranslationGratis -= 20;
         if (scrollTranslationGratis === -80) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
@@ -163,5 +165,34 @@ const scrollingRightGratis = () => {
         }
     }
     document.getElementById('left__arrow-gratis').style.visibility = "visible";
+    document.getElementById('scroll__list-gratis').style.transform = `translateX(${scrollTranslationGratis}%)`;
+}
+
+
+const scrollingLeftGratis = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationGratis += 19;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationGratis += 20;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslationGratis += 22;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else if (window.innerWidth < 440) {
+        scrollTranslationGratis += 9;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else if (window.innerWidth >= 1260) {
+        scrollTranslationGratis += 31;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else {
+        scrollTranslationGratis += 24;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    }
+
+    if(!scrollTranslationGratis) {
+        document.getElementById('left__arrow-gratis').style.visibility = "hidden";
+    }
+    document.getElementById('right__arrow-gratis').style.visibility = "visible";
     document.getElementById('scroll__list-gratis').style.transform = `translateX(${scrollTranslationGratis}%)`;
 }
