@@ -153,9 +153,14 @@ const scrollingRightGratis = () => {
         if (scrollTranslationGratis === -90) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
-    } else if (window.innerWidth >= 1260) {
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
         scrollTranslationGratis -= 31;
         if (scrollTranslationGratis === -62) {
+            document.getElementById('right__arrow-gratis').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationGratis -= 27;
+        if (scrollTranslationGratis === -54) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else {
@@ -182,8 +187,11 @@ const scrollingLeftGratis = () => {
     } else if (window.innerWidth < 440) {
         scrollTranslationGratis += 9;
         scrollTranslationGratis = +scrollTranslationGratis;
-    } else if (window.innerWidth >= 1260) {
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
         scrollTranslationGratis += 31;
+        scrollTranslationGratis = +scrollTranslationGratis;
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationGratis += 27;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else {
         scrollTranslationGratis += 24;
