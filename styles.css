@@ -32,7 +32,6 @@ body {
     flex-wrap: nowrap;
     align-items: center;
     padding: 10px 20px;
-    /* max-width: 1680px; */
     width: 100%;
     background-color: #000;
     border-bottom: 1px solid rgba(255,255,255,0.2);
@@ -347,12 +346,23 @@ a {
 main {
     background-color: #171717;
     box-shadow: 0 0 15px 0 rgb(0 0 0 / 60%);
+    width: 100%;
 }
 
 /* BANNERS */
 
 .banners__section {
-    padding: 10px 0px 0px 15px;
+    padding: 20px 0 8px 15px;
+}
+
+.gratis__section {
+    padding: 8px 0 10px 15px;
+}
+
+.gratis {
+    overflow: hidden;
+    display: flex;
+    position: relative;
 }
 
 .banners {
@@ -433,20 +443,68 @@ main {
     outline-offset: -4px;
 }
 
+#horizontal__photo {
+    width: 327px;
+    height: 215px;
+}
+
 .scrollable__list-photo {
     width: 180px;
 }
 
-#horizontal__photo {
-    width: 320px;
-    height: 210px;
+.gratis__title {
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.gratis__title-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+    margin-bottom: 5px;
+}
+
+.gratis__title-see-all {
+    margin-top: 4px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.gratis__title-see-all-container {
+    display: flex;
+}
+
+.see-all {
+    margin-right: 5px;
 }
 
 /* RESPONSIVE */
 
 @media (min-width: 730px) {
     .banners__section {
-        padding-bottom: 30px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    .gratis__title-container {
+        margin-top: 8px;
+    }
+
+    .gratis__title {
+        font-size: 16px;
+    } 
+
+    .gratis__title-see-all {
+        font-size: 10px;
+    }
+
+    .gratis__title-see-all-container {
+        display: none;
     }
 }
 
@@ -487,9 +545,16 @@ main {
     }
 }
 
+@media screen and (max-width: 1260px) {
+    #horizontal__photo {
+        width: 240px;
+        height: 160px;
+    }
+}
+
 @media screen and (min-width: 1680px) {
     .nav__items {
-        overflow-x: hidden;
+        /* overflow-x: hidden; */
         padding: 10px 100px;
     }
 
@@ -509,7 +574,9 @@ main {
     .mblnav {
         display: none;
     }
+}
 
+@media screen and (min-width: 1600px) {
     .horizontal__list-arrow {
         display: none;
     }
@@ -576,7 +643,7 @@ main {
 
     #horizontal__photo {
         width: 240px;
-        height: 170px;
+        height: 160px;
     }
 }
 

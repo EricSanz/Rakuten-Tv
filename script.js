@@ -63,35 +63,45 @@ cinemaMenuOptions.addEventListener('mouseout', () => {
     cinemaTitle.style.color = '#fff';
 }, false);
 
-// HORIZONTAL SCROLL //
+// Horizontal Scroll //
 
-const scrollingRight = () => {
+const scrollingRightBanners = () => {
     if (window.innerWidth < 1024 && window.innerWidth >= 800) {
         scrollTranslation -= 13;
         if (scrollTranslation === -52) {
-            document.getElementById('right__arrow').style.visibility = "hidden";
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
         scrollTranslation -= 20;
-        if (scrollTranslation === -60) {
-            document.getElementById('right__arrow').style.visibility = "hidden";
+        if (scrollTranslation === -40) {
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
         scrollTranslation -= 22;
-        if (scrollTranslation === -66) {
-            document.getElementById('right__arrow').style.visibility = "hidden";
+        if (scrollTranslation === -44) {
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 440) {
+        scrollTranslation -= 23;
+        if (scrollTranslation === -69) {
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1260) {
+        scrollTranslation -= 15;
+        if (scrollTranslation === -15) {
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
         }
     } else {
-        scrollTranslation -= 18;
-        if (scrollTranslation === -72) {
-            document.getElementById('right__arrow').style.visibility = "hidden";
+        scrollTranslation -= 20;
+        if (scrollTranslation === -20) {
+            document.getElementById('right__arrow-banners').style.visibility = "hidden";
         }
     }
-    document.getElementById('left__arrow').style.visibility = "visible";
+    document.getElementById('left__arrow-banners').style.visibility = "visible";
     document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
 }
 
-const scrollingLeft = () => {
+const scrollingLeftBanners = () => {
     if (window.innerWidth < 1024 && window.innerWidth >= 800) {
         scrollTranslation += 13;
         scrollTranslation = +scrollTranslation;
@@ -101,14 +111,20 @@ const scrollingLeft = () => {
     } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
         scrollTranslation += 22;
         scrollTranslation = +scrollTranslation;
+    } else if (window.innerWidth < 400) {
+        scrollTranslation += 23;
+        scrollTranslation = +scrollTranslation;
+    } else if (window.innerWidth >= 1260) {
+        scrollTranslation += 15;
+        scrollTranslation = +scrollTranslation;
     } else {
-        scrollTranslation += 18;
+        scrollTranslation += 20;
         scrollTranslation = +scrollTranslation;
     }
 
     if(!scrollTranslation) {
-        document.getElementById('left__arrow').style.visibility = "hidden";
+        document.getElementById('left__arrow-banners').style.visibility = "hidden";
     }
-    document.getElementById('right__arrow').style.visibility = "visible";
+    document.getElementById('right__arrow-banners').style.visibility = "visible";
     document.getElementById('scroll__list').style.transform = `translateX(${scrollTranslation}%)`;
 }

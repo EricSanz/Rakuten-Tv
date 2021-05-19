@@ -115,16 +115,16 @@
                         <img src="/Rakuten-Tv/media/main page/starzplay-mainCarousel.png" class="d-block w-100" alt="StarzPlay">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Rakuten-Tv/media/main page/cinema-peliculas-para-todos-los-gustos-mainCarousel.png" class="d-block w-100" alt="Peliculas para todos los gustos">
+                        <img src="/Rakuten-Tv/media/main page/instant-escapes-promo-mainCarousel.png" class="d-block w-100" alt="Peliculas para todos los gustos">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="/Rakuten-Tv/media/main page/salvaje-mainCarousel.jpeg" class="d-block w-100" alt="Peliculas para todos los gustos">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Rakuten-Tv/media/main page/manual-de-la-buena-esposa-mainCarousel.jpeg" class="d-block w-100" alt="Peliculas para todos los gustos">
+                        <img src="/Rakuten-Tv/media/main page/raya-y-el-ultimo-dragon-mainCarousel.jpeg" class="d-block w-100" alt="Peliculas para todos los gustos">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Rakuten-Tv/media/main page/croods-2-mainCarousel.jpeg" class="d-block w-100" alt="Peliculas para todos los gustos">
+                        <img src="/Rakuten-Tv/media/main page/rtv-stories-pasion-por-el-futbol.png" class="d-block w-100" alt="Peliculas para todos los gustos">
                       </div>
                       <div class="carousel-item" data-bs-interval="5000">
                         <img src="/Rakuten-Tv/media/main page/zack-snyder-justice-league-mainCarousel.jpeg" class="d-block w-100" alt="Peliculas para todos los gustos">
@@ -148,10 +148,10 @@
         </section>
         <section class="banners__section">
             <div class="banners">
-                <div class="arrow__container left__arrow-container" id="left__arrow" onclick="scrollingLeft()">
+                <div class="arrow__container left__arrow-container" id="left__arrow-banners" onclick="scrollingLeftBanners()">
                     <span class="material-icons arrow__left horizontal__list-arrow">navigate_before</span>
                 </div>
-                <div class="arrow__container right__arrow-container" id="right__arrow" onclick="scrollingRight()">
+                <div class="arrow__container right__arrow-container" id="right__arrow-banners" onclick="scrollingRightBanners()">
                     <span class="material-icons arrow__right horizontal__list-arrow">navigate_next</span>
                 </div>
                 <div class="scrollable__list" id="scroll__list">
@@ -159,7 +159,45 @@
                     <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/cinema-generic.jpeg" alt="Últimos estrenos">
                     <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/free-generic.jpeg" alt="Contenido gratuito">
                     <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/starzplay-generic.png" alt="StarzPlay">
-                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/peliculas-promo.png" alt="Peliculas promo">
+                    <img id="horizontal__photo" class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/instant-escapes-promo.png" alt="Peliculas promo">
+                </div>
+            </div>
+        </section>
+        <section class="gratis__section">
+            <div class="gratis__title-container">
+                <span class="gratis__title">GRATIS - La mejor selección de películas</span>
+                <div class="gratis__title-see-all-container">
+                    <span class="gratis__title-see-all">VER TODO</span>
+                    <span class="material-icons see-all">navigate_next</span>
+                </div>
+            </div>
+            <div class="gratis">
+                <div class="arrow__container left__arrow-container" id="left__arrow-gratis" onclick="scrollingLeftGratis()">
+                    <span class="material-icons arrow__left horizontal__list-arrow" >navigate_before</span>
+                </div>
+                <div class="arrow__container right__arrow-container" id="right__arrow-gratis" onclick="scrollingRightGratis()">
+                    <span class="material-icons arrow__right horizontal__list-arrow" >navigate_next</span>
+                </div>
+                <div class="scrollable__list" id="scroll__list-gratis">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/transcendence.jpeg" alt="Transcendence">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/triple-amenaza.jpeg" alt="Triple amenaza">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/atrapado-en-un-pirado.jpeg" alt="Atrapado en un pirado">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/una-mama-en-apuros.jpeg" alt="Una mama en apuros">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/the-gold-retrievers.jpeg" alt="The gold retrievers">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/diario-de-una-ninfomana.jpeg" alt="Diario de una ninfomana">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/copito-de-nieve.jpeg" alt="Copito de nieve">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/patrick.jpeg" alt="Patrick">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/lidice.jpeg" alt="Lidice">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/el-nuevo-nuevo-testamento.jpeg" alt="El nuevo testamento">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/7500.jpeg" alt="Vuelo 7500">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/goodbye-lover.jpeg" alt="Goodbye Lover">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/manana-cuando-la-guerra-empiece.jpeg" alt="mañana cuando la guerra empiece">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/the-sunchaser.jpeg" alt="The sunchaser">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/antes-de-que-te-vayas.jpeg" alt="Antes de que te vayas">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/date-movie.jpeg" alt="Date movie">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/manolito-gafotas.jpeg" alt="Manolito gafotas">
+                    <img class="scrollable__list-photo" src="/Rakuten-Tv/media/main page/cruzando-el-limite.jpeg" alt="Cruzando el límite">
+                    <!-- <span class="material-icons">add_circle</span> -->
                 </div>
             </div>
         </section>
