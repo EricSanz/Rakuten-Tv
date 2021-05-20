@@ -589,6 +589,87 @@ main {
     text-shadow: 0 0 3px rgba(0,0,0,.8);
 }
 
+/* FOOTER */
+
+.desktop__footer-wrapper {
+    display: block;
+    padding: 25px;
+    text-align: center;
+    background-color: #212121;
+}
+
+.dektop__footer-title {
+    margin-top: 15px;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.desktop__footer-info {
+    margin: 10px auto 20px;
+    width: 50%;
+    color: #ccc;
+    font-size: 14px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    text-align: center;
+    line-height: 160%;
+}
+
+.desktop__footer-sections-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop__footer-section {
+    vertical-align: top;
+    background-size: 180px 90px;
+    width: 30%;
+    background-position: center top;
+    background-repeat: no-repeat;
+    padding: 20px 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desktop__footer-section > img {
+    padding-bottom: 15px;
+}
+
+.help {
+    width: 80px;
+}
+
+.how-it-works {
+    width: 120px;
+}
+
+.payment {
+    width: 230px;
+}
+
+.desktop__footer-section-title {
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.desktop__footer-section-info {
+    margin-top: 10px;
+    color: #ccc;
+    font-family: 'Noto Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+}
+
+
 /* RESPONSIVE */
 
 @media (min-width: 730px) {

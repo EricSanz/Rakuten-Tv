@@ -405,10 +405,10 @@ const scrollingLeftGenres = () => {
     } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
         scrollTranslationGenres += 22;
         scrollTranslationGenres = +scrollTranslationGenres;
-    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+    } else if (window.innerWidth < 440 && window.innerWidth >= 390) {
         scrollTranslationGenres += 9;
         scrollTranslationGenres = +scrollTranslationGenres;
-    } else if (window.innerWidth < 440) {
+    } else if (window.innerWidth < 390) {
         scrollTranslationGenres += 5;
         scrollTranslationGenres = +scrollTranslationGenres;
     } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
