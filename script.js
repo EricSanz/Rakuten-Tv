@@ -10,6 +10,7 @@ const searchContainerClose = document.getElementById('search__box-close-id');
 const navItems = document.getElementById('nav__items-id');
 let scrollTranslation = 0;
 let scrollTranslationGratis = 0;
+let scrollTranslationCinema = 0;
 
 
 // Search Button Functionalities //
@@ -139,8 +140,8 @@ const scrollingRightGratis = () => {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
-        scrollTranslationGratis -= 20;
-        if (scrollTranslationGratis === -80) {
+        scrollTranslationGratis -= 14;
+        if (scrollTranslationGratis === -84) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
@@ -149,23 +150,23 @@ const scrollingRightGratis = () => {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth < 440) {
-        scrollTranslationGratis -= 9;
-        if (scrollTranslationGratis === -90) {
+        scrollTranslationGratis -= 7;
+        if (scrollTranslationGratis === -91) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
-        scrollTranslationGratis -= 31;
-        if (scrollTranslationGratis === -62) {
+        scrollTranslationGratis -= 33;
+        if (scrollTranslationGratis === -66) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else if (window.innerWidth >= 1600) {
-        scrollTranslationGratis -= 27;
-        if (scrollTranslationGratis === -54) {
+        scrollTranslationGratis -= 30;
+        if (scrollTranslationGratis === -60) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     } else {
-        scrollTranslationGratis -= 24;
-        if (scrollTranslationGratis === -72) {
+        scrollTranslationGratis -= 19;
+        if (scrollTranslationGratis === -76) {
             document.getElementById('right__arrow-gratis').style.visibility = "hidden";
         }
     }
@@ -179,22 +180,22 @@ const scrollingLeftGratis = () => {
         scrollTranslationGratis += 19;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
-        scrollTranslationGratis += 20;
+        scrollTranslationGratis += 14;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
         scrollTranslationGratis += 22;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else if (window.innerWidth < 440) {
-        scrollTranslationGratis += 9;
+        scrollTranslationGratis += 7;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
-        scrollTranslationGratis += 31;
+        scrollTranslationGratis += 33;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else if (window.innerWidth >= 1600) {
-        scrollTranslationGratis += 27;
+        scrollTranslationGratis += 30;
         scrollTranslationGratis = +scrollTranslationGratis;
     } else {
-        scrollTranslationGratis += 24;
+        scrollTranslationGratis += 19;
         scrollTranslationGratis = +scrollTranslationGratis;
     }
 
@@ -203,4 +204,80 @@ const scrollingLeftGratis = () => {
     }
     document.getElementById('right__arrow-gratis').style.visibility = "visible";
     document.getElementById('scroll__list-gratis').style.transform = `translateX(${scrollTranslationGratis}%)`;
+}
+
+
+// CINEMA SECTION //
+
+const scrollingRightCinema = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationCinema -= 19;
+        if (scrollTranslationCinema === -76) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationCinema -= 14;
+        if (scrollTranslationCinema === -84) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslationCinema -= 22;
+        if (scrollTranslationCinema === -44) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 440) {
+        scrollTranslationCinema -= 7;
+        if (scrollTranslationCinema === -91) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
+        scrollTranslationCinema -= 33;
+        if (scrollTranslationCinema === -66) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationCinema -= 30;
+        if (scrollTranslationCinema === -60) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    } else {
+        scrollTranslationCinema -= 19;
+        if (scrollTranslationCinema === -76) {
+            document.getElementById('right__arrow-cinema').style.visibility = "hidden";
+        }
+    }
+    document.getElementById('left__arrow-cinema').style.visibility = "visible";
+    document.getElementById('scroll__list-cinema').style.transform = `translateX(${scrollTranslationCinema}%)`;
+}
+
+
+const scrollingLeftCinema = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationCinema += 19;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationCinema += 14;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslationCinema += 22;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else if (window.innerWidth < 440) {
+        scrollTranslationCinema += 7;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
+        scrollTranslationCinema += 33;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationCinema += 30;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    } else {
+        scrollTranslationCinema += 19;
+        scrollTranslationCinema = +scrollTranslationCinema;
+    }
+
+    if(!scrollTranslationCinema) {
+        document.getElementById('left__arrow-cinema').style.visibility = "hidden";
+    }
+    document.getElementById('right__arrow-cinema').style.visibility = "visible";
+    document.getElementById('scroll__list-cinema').style.transform = `translateX(${scrollTranslationCinema}%)`;
 }

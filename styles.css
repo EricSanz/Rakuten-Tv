@@ -459,7 +459,7 @@ main {
 }
 
 .scrollable__list-photo {
-    width: 220px;
+    width: 210px;
     height: 300px;
 }
 
@@ -492,14 +492,25 @@ main {
     margin-right: 5px;
 }
 
+.title__box {
+    display: flex;
+    align-items: center;
+}
+
+.next {
+    font-size: 16px;
+    padding-top: 4px;
+    visibility: hidden;
+}
+
 .more__container::before {
     content: '';
     display: block;
 }
 
 .more__container {
-    width: 180px;
-    height: 250px;
+    width: 210px;
+    height: 300px;
     background-color: #252525;
     border-radius: 2px;
     margin-right: 10px;
@@ -507,6 +518,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.more__container:hover {
+    outline: 4px solid #ffe300;
+    outline-offset: -4px;
 }
 
 /* .more__container::after {
@@ -561,6 +577,10 @@ main {
 
     .gratis__title-see-all-container, .cinema__title-see-all-container {
         display: none;
+    }
+
+    .next {
+        visibility: visible;
     }
 }
 
