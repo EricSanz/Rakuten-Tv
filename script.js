@@ -12,6 +12,7 @@ let scrollTranslation = 0;
 let scrollTranslationGratis = 0;
 let scrollTranslationCinema = 0;
 let scrollTranslationStories = 0;
+let scrollTranslationGenres = 0;
 
 
 // Search Button Functionalities //
@@ -352,4 +353,78 @@ const scrollingLeftStories = () => {
     }
     document.getElementById('right__arrow-stories').style.visibility = "visible";
     document.getElementById('scroll__list-stories').style.transform = `translateX(${scrollTranslationStories}%)`;
+}
+
+// GENRE SECTION //
+
+const scrollingRightGenres = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationGenres -= 19;
+        if (scrollTranslationGenres === -57) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationGenres -= 22;
+        if (scrollTranslationGenres === -66) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 440 && window.innerWidth >= 390) {
+        scrollTranslationGenres -= 9;
+        if (scrollTranslationGenres === -81) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth < 390) {
+        scrollTranslationGenres -= 5;
+        if (scrollTranslationGenres === -85) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
+        scrollTranslationGenres -= 36;
+        if (scrollTranslationGenres === -36) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationGenres -= 25;
+        if (scrollTranslationGenres === -25) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    } else {
+        scrollTranslationGenres -= 28;
+        if (scrollTranslationGenres === -56) {
+            document.getElementById('right__arrow-genres').style.visibility = "hidden";
+        }
+    }
+    document.getElementById('left__arrow-genres').style.visibility = "visible";
+    document.getElementById('scroll__list-genres').style.transform = `translateX(${scrollTranslationGenres}%)`;
+}
+
+const scrollingLeftGenres = () => {
+    if (window.innerWidth < 1024 && window.innerWidth >= 800) {
+        scrollTranslationGenres += 19;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else if (window.innerWidth < 800 && window.innerWidth >= 670) {
+        scrollTranslationGenres += 22;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else if (window.innerWidth < 670 && window.innerWidth >= 440) {
+        scrollTranslationGenres += 9;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else if (window.innerWidth < 440) {
+        scrollTranslationGenres += 5;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else if (window.innerWidth >= 1260 && window.innerWidth < 1600) {
+        scrollTranslationGenres += 36;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else if (window.innerWidth >= 1600) {
+        scrollTranslationGenres += 25;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    } else {
+        scrollTranslationGenres += 28;
+        scrollTranslationGenres = +scrollTranslationGenres;
+    }
+
+    if(!scrollTranslationGenres) {
+        document.getElementById('left__arrow-genres').style.visibility = "hidden";
+    }
+    document.getElementById('right__arrow-genres').style.visibility = "visible";
+    document.getElementById('scroll__list-genres').style.transform = `translateX(${scrollTranslationGenres}%)`;
 }
