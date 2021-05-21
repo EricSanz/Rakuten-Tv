@@ -733,6 +733,53 @@ main {
     font-family: 'Noto Sans', Arial, sans-serif;
 }
 
+/* HOVER */
+
+.background-photo {
+    background-image: url(/Rakuten-Tv/media/main-page/el-virtuoso.png);
+    background-size: cover;
+}
+
+.detail-hover {
+    display: none;
+}
+
+.detail-hover > h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.detail-hover > .plot-hover {
+    color: #d9d9d9;
+    font-size: 14px;
+}
+
+.watch-now-hover {
+    color: #ffe300;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.pegi {
+    width: 30px;
+}
+
+.summary {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+.hover-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hover-button {
+
+}
+
 /* RESPONSIVE */
 
 @media (min-width: 730px) {
