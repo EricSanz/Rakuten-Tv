@@ -740,34 +740,86 @@ main {
     background-size: cover;
 }
 
+.arrow-hover {
+    display: block;
+    position: relative;
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent; 
+    border-right: 20px solid rgba(0, 0, 0, .9);
+    background-blend-mode: overlay;
+    top: 45%;
+    left: -44px;
+}
+
 .detail-hover {
     display: none;
 }
 
 .detail-hover > h2 {
-    margin-top: 0;
+    margin-top: -30px;
     font-weight: 600;
 }
 
 .detail-hover > .plot-hover {
     color: #d9d9d9;
     font-size: 14px;
+    margin-bottom: 5px;
+    font-family: 'Noto Sans', Arial, sans-serif;
 }
 
-.watch-now-hover {
+.whatch-now-hover {
     color: #ffe300;
     font-size: 12px;
     font-weight: 600;
 }
 
-.pegi {
-    width: 30px;
+.icons {
+    color: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.rotate {
+    transform: rotate(45deg);
+}
+
+.add-movie,
+.trailer {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 0;
 }
 
 .summary {
-    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
     font-size: 11px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.group__box {
+    display: flex;
+    width: 45px;
+    height: 20px;
+    text-align: center;
+    justify-content: center;
+    padding-top: 2px;
+    margin-top: -2px;
+    margin-right: 8px;
+    margin-left: 8px;
+    border: 1px  solid#fff;
+    /* box-shadow: 0 0 1px #fff; */
+}
+
+.icons-group {
+    color: #fff;
+    font-size: 14px;
+    margin-top: 2px;
+    margin-right: 3px;
 }
 
 .hover-buttons {
@@ -777,10 +829,49 @@ main {
 }
 
 .hover-button {
-
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 40px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    margin-right: 8px;
 }
 
+.hover-button:hover {
+    border: 2px solid #ffe300;
+    color: #ffe300;
+}
+
+.hover-button:hover > .icons {
+    color: #ffe300;
+  }
+
 /* RESPONSIVE */
+
+@media screen and (min-width: 1024px) {
+    .mblnav {
+        display: none;
+    }
+
+    .background-photo:hover > .detail-hover {
+        display: block;
+        position: relative;
+        left: 220px;
+        background-image: url(/Rakuten-Tv/media/main-page/el-virtuoso.png);
+        background-color: rgba(0, 0, 0, .8);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-blend-mode: overlay;
+        width: 500px;
+        top: 6px;
+        border-radius: 10px;
+        height: 96%;
+        box-shadow: 0 0 1px #fff;
+        padding: 15px 25px;
+    }
+}
 
 @media (min-width: 730px) {
     .banners__section {
@@ -893,12 +984,6 @@ main {
 
 @media screen and (max-width: 1250px) {
     .nav__items-help {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .mblnav {
         display: none;
     }
 }
