@@ -769,7 +769,7 @@ main {
     font-family: 'Noto Sans', Arial, sans-serif;
 }
 
-.whatch-now-hover {
+.whatch-now-hover, .icons-p {
     color: #ffe300;
     font-size: 12px;
     font-weight: 600;
@@ -846,7 +846,12 @@ main {
 
 .hover-button:hover > .icons {
     color: #ffe300;
-  }
+}
+
+.icons-p {
+    font-size: 9px;
+    margin-left: -2px;
+}
 
 /* RESPONSIVE */
 
