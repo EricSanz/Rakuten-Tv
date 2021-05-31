@@ -736,7 +736,7 @@ main {
 /* HOVER */
 
 .background-photo {
-    background-image: url(/Rakuten-Tv/media/main-page/el-virtuoso.png);
+    background-image: url(./media/main-page/el-virtuoso.png);
     background-size: cover;
 }
 
@@ -864,7 +864,7 @@ main {
         display: block;
         position: relative;
         left: 220px;
-        background-image: url(/Rakuten-Tv/media/main-page/el-virtuoso.png);
+        background-image: url(./media/main-page/el-virtuoso.png);
         background-color: rgba(0, 0, 0, .8);
         background-repeat: no-repeat;
         background-size: 100%;
